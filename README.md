@@ -53,7 +53,7 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 link: <https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150>
 
-# 0002-elias
+# 0003-elias
 
 Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 
