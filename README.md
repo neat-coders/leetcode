@@ -198,3 +198,27 @@ Output: -1
 Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 Link: <https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/>
+
+# 0008-yared 844-backspace String Compare.
+
+Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.
+
+Note that after backspacing an empty text, the text will continue empty.
+
+Example 1:
+
+Input: s = "ab#c", t = "ad#c"
+Output: true
+Explanation: Both s and t become "ac".
+Example 2:
+
+Input: s = "ab##", t = "c#d#"
+Output: true
+Explanation: Both s and t become "".
+Example 3:
+
+Input: s = "a#c", t = "b"
+Output: false
+Explanation: s becomes "c" while t becomes "b".
+
+Link: <https://leetcode.com/problems/backspace-string-compare/description/>
