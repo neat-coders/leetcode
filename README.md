@@ -199,7 +199,7 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 Link: <https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/>
 
-# 0008-yared 844-backspace String Compare.
+# 0008-yared 844-backspaceStringCompare
 
 Given two strings s and t, return true if they are equal when both are typed into empty text editors. '#' means a backspace character.
 
@@ -222,3 +222,27 @@ Output: false
 Explanation: s becomes "c" while t becomes "b".
 
 Link: <https://leetcode.com/problems/backspace-string-compare/description/>
+
+# 0009-abel 020-validParentheses
+
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Every close bracket has a corresponding open bracket of the same type.
+
+Example 1:
+
+Input: s = "()"
+Output: true
+Example 2:
+
+Input: s = "()[]{}"
+Output: true
+Example 3:
+
+Input: s = "(]"
+Output: false
+Link: <https://leetcode.com/problems/valid-parentheses/description/>
