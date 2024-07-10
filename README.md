@@ -299,3 +299,9 @@ Output: 6
 Explanation: The last word is "joyboy" with length 6.
 
 Link: <https://leetcode.com/problems/length-of-last-word/description/>
+
+# 0012,0013,0014
+
+443-StringCompression: <https://leetcode.com/problems/string-compression/?envType=study-plan-v2&envId=leetcode-75>
+306-additiveNumber: <https://leetcode.com/problems/additive-number/>
+013-romanToInteger: <https://leetcode.com/problems/roman-to-integer/description/?envType=study-plan-v2&envId=top-interview-150>
