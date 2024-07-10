@@ -305,3 +305,13 @@ Link: <https://leetcode.com/problems/length-of-last-word/description/>
 443-StringCompression: <https://leetcode.com/problems/string-compression/?envType=study-plan-v2&envId=leetcode-75>
 306-additiveNumber: <https://leetcode.com/problems/additive-number/>
 013-romanToInteger: <https://leetcode.com/problems/roman-to-integer/description/?envType=study-plan-v2&envId=top-interview-150>
+
+# 0015 - 1518-waterBottles
+
+There are numBottles water bottles that are initially full of water. You can exchange numExchange empty water bottles from the market with one full water bottle.
+
+The operation of drinking a full water bottle turns it into an empty bottle.
+
+Given the two integers numBottles and numExchange, return the maximum number of water bottles you can drink.
+
+Link:<https://leetcode.com/problems/water-bottles/description/>
