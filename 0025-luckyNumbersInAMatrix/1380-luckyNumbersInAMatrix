@@ -1,0 +1,29 @@
+class Solution {
+    public List<Integer> luckyNumbers (int[][] matrix) {
+        List<Integer> luckyNums = new ArrayList<>();
+        int i , j , k , minValue , minColumn , flag;
+        for( i=0 ; i<matrix.length ; i++){
+            minValue = matrix[i][0];
+            minColumn = 0;
+            flag = 0;
+            for(j=1 ; j<matrix[i].length ; j++){
+                if(matrix[i][j]<minValue){
+                    minValue = matrix[i][j];
+                    minColumn = j;
+                }
+            }
+            for(k=0 ; k <matrix.length ; k++){
+                if(matrix[k][minColumn] > minValue){
+                    flag = 1;
+                    break;
+                }
+
+            }
+            if(flag != 1){
+                luckyNums.add(minValue);
+            }
+
+        }
+        return luckyNums;
+    }
+}
