@@ -1,0 +1,13 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        int b = 0 , s = 1 , profit = 0;
+        while(b < prices.length-1){
+            if(prices[b] < prices[s]){
+                profit += prices[s] - prices[b];
+            }
+            b++;
+            s = b+1;
+        }
+        return profit;
+    }
+}
