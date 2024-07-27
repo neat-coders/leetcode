@@ -1,0 +1,28 @@
+class Solution {
+    public void setZeroes(int[][] matrix) {
+        if(matrix == null){
+            return;
+        }
+        int rows = matrix.length;
+        int columns = matrix[0].length;
+        Set<Integer> rowsToZero = new HashSet<>();
+        Set<Integer> columnsToZero = new HashSet<>();
+        // find all rows and columns to be set to zero
+        for(int i=0 ; i<rows ; i++){
+            for(int j=0 ; j<columns ; j++){
+                if(matrix[i][j] == 0){
+                    rowsToZero.add(i);
+                    columnsToZero.add(j);
+                }
+            }
+        }
+        //set elements to zero
+        for(int i=0 ; i<rows ; i++){
+            for(int j=0 ; j<columns ; j++){
+                if(rowsToZero.contains(i) || columnsToZero.contains(j)){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+    }
+}
