@@ -1,0 +1,34 @@
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+        int rows = board.length;
+        int columns = board[0].length;
+        HashSet<Character>[] row = new HashSet[rows];
+        HashSet<Character>[] column = new HashSet[columns];
+        HashSet<Character>[] subBox = new HashSet[9];
+        // initialize hashset
+        for(int i = 0; i < rows; i++) {
+            row[i] = new HashSet<>();
+            column[i] = new HashSet<>();
+            subBox[i] = new HashSet<>();
+        }
+        for(int i=0 ; i<rows ; i++){
+            for(int j=0 ; j<columns ; j++){
+                char num = board[i][j];
+                int boxnum = i/3 * 3 + j/3;
+                if(num != '.'){
+                    if(row[i].contains(num) || column[j].contains(num) || subBox[boxnum].contains(num)){
+                        return false; 
+                    }
+                    else{
+                        row[i].add(num);
+                        column[j].add(num);
+                        subBox[boxnum].add(num);
+                    }
+                }
+            }
+            
+        }
+        return true;
+    }
+
+}
